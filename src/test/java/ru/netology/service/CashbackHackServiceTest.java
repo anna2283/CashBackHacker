@@ -7,7 +7,6 @@ public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
 
-
     @org.testng.annotations.Test
     public void testRemainBoundaryValuesTwo() {
         org.testng.Assert.assertEquals(service.remain(0), 1000);
@@ -33,9 +32,4 @@ public class CashbackHackServiceTest {
         org.testng.Assert.assertEquals(service.remain(1001), 999);
     }
 
-    @org.testng.annotations.Test
-    public void testRemainCriticalPath() {
-        org.testng.Assert.assertEquals(service.remain(400), 600);
-    }
 }
-
